@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahkir Alkozai's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="accessibility-controls">
+            <button onclick="increaseTextSize()" class="accessibility-btn">
+                <i class="fas fa-text-height"></i> Enlarge Text
+            </button>
+            <button onclick="toggleColors()" class="accessibility-btn">
+                <i class="fas fa-palette"></i> Toggle Colors
+            </button>
+        </div>
+
+        <header class="main-header">
+            <h1>Shahkir Alkozai</h1>
+            <h2>Business Technology Management Professional</h2>
+        </header>
+
+        <main class="content-grid">
+            <section class="profile-section">
+                <div class="profile-header">
+                    <img src="me.jpg" alt="Shahkir Alkozai" class="profile-image">
+                    <div class="profile-intro">
+                        <h2>Welcome!</h2>
+                        <p>Hi, I'm Shahkir. I'm currently wrapping up my fifth and final year at Toronto Metropolitan University, where I'm enrolled in the Business Technology Management Co-op program. Over the course of my studies, I've gained a solid understanding of both business and technology, equipping me to help organizations use tech-driven solutions to solve business challenges.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="content-columns">
+                <div class="left-column">
+                    <section class="education">
+                        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                        <div class="education-item">
+                            <h3>Toronto Metropolitan University</h3>
+                            <p class="education-details">Business Technology Management, Bachelor of Commerce</p>
+                            <p class="education-period">2020 - Present</p>
+                        </div>
+                    </section>
+
+                    <section class="experience">
+                        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                        <ul class="experience-list">
+                            <li>
+                                <span class="job-title">Business Development Advisor:</span>
+                                <span class="company">Q Engineering</span>
+                                <span class="period">(2020-Present)</span>
+                            </li>
+                            <li>
+                                <span class="job-title">Chief Marketing Officer:</span>
+                                <span class="company">EduTutor</span>
+                                <span class="period">(2021-Present)</span>
+                            </li>
+                            <li>
+                                <span class="job-title">Chief Partnership Outreach Officer:</span>
+                                <span class="company">Pnyx Entertainment</span>
+                                <span class="period">(2022-Present)</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="skills">
+                        <h2><i class="fas fa-tools"></i> Skills</h2>
+                        <ul class="skills-list">
+                            <li>
+                                <strong>Project Management:</strong> 
+                                <p>Experienced in managing IT projects, ensuring timely delivery while meeting budget and quality standards.</p>
+                            </li>
+                            <li>
+                                <strong>Data Analysis:</strong>
+                                <p>Proficient in analyzing data to extract meaningful insights, using tools like Excel and SQL to support decision-making processes.</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <section class="media-section">
+                        <h2><i class="fas fa-headphones"></i> Audio Sample</h2>
+                        <figure>
+                            <audio controls class="audio-player">
+                                <source src="audio/skrra.mp3" type="audio/mpeg">
+                                <source src="sound.mp3" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <figcaption>Audio recording by Tomgrfer. (2022, September 25). The ting goes SKRRA</figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="gallery">
+                        <h2><i class="fas fa-images"></i> Image Gallery</h2>
+                        <div class="gallery-grid">
+                            <figure>
+                                <img src="bird.jpeg" alt="A vibrant green parrot perched on a branch" class="gallery-image">
+                                <figcaption>Image taken on June 23, 2024, at Toronto, Canada.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="watches.jpeg" alt="A luxurious gold watch" class="gallery-image">
+                                <figcaption>Image taken on May 2, 2024, at Toronto, Canada.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="cheese.jpeg" alt="A block of white feta cheese" class="gallery-image">
+                                <figcaption>Image taken on November 3, 2024, at Toronto, Canada.</figcaption>
+                            </figure>
+                        </div>
+                        <button id="showAltText" class="gallery-btn">
+                            <i class="fas fa-info-circle"></i> Show Image Descriptions
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
